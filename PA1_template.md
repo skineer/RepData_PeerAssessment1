@@ -146,7 +146,8 @@ colnames(filled_activity_group) <- c("interval", "steps", "week")
 
 # Plot the comparison
 xyplot(steps ~ interval | week, data = filled_activity_group, type = "l",
-       layout = c(1,2), xlab = "Interval", ylab = "Number of Steps", main = "Avarage Step Count on Weekdays vs Weekends")
+       layout = c(1,2), xlab = "Interval", ylab = "Number of Steps", 
+       main = "Avarage Step Count on Weekdays vs Weekends")
 ```
 
 ![plot of chunk pattern](figure/pattern-1.png)
